@@ -1,26 +1,21 @@
-# This example requires the 'message_content' privileged intents
+# Миграция 3.0.
+# Бот является информационным(памятка правила), так же может действовать и на ролей
 
-import os
-import discord
-from discord.ext import commands
+import disnake
+from disnake.ext import commands
 
+intents = disnake.Intents().all()
 
-intents = discord.Intents.default()
-intents.message_content = True
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.InteractionBot(intents=intents)
 
+bot.load_extension("cogs.rules") # правила
+bot.load_extension("cogs.roles") # выбор ролей
+bot.load_extension("cogs.tickets") # тикеты
+bot.load_extension("cogs.verify") # тикеты
+#E61254
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user}")
-
-@bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
-
-@bot.command()
-async def hello(ctx):
-    await ctx.send("Choo choo! 🚅")
-
-
+    print(f"{bot.user} - connected!")
+    
 bot.run(os.environ["DISCORD_TOKEN"])
