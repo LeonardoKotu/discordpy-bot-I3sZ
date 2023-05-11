@@ -1,7 +1,7 @@
 # Миграция 3.0.
 # Бот является информационным(памятка правила), так же может действовать и на ролей
 
-import disnake
+import disnake, os
 from disnake.ext import commands
 
 intents = disnake.Intents().all()
