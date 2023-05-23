@@ -341,7 +341,7 @@ class Rules(commands.Cog):
 	async def on_message(self, message):
 		if message.content == "!!rules":
 			img = disnake.Embed(colour=0x2f3136)
-			img.set_image(url='https://i.pinimg.com/originals/f1/18/30/f118307225c557ea9c083486da5c1c42.gif')
+			img.set_image(url='https://i.pinimg.com/564x/03/63/04/0363049e7c6da76d5cdc87eddcc7ba74.jpg')
 
 			embed = disnake.Embed(
 
@@ -355,7 +355,7 @@ class Rules(commands.Cog):
 				colour=0x2f3136
 			)
 
-			embed.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104051567855927398/2023-05-05_16-26-37.png")
+			embed.set_image(url="https://i.imgur.com/2GxE5Kn.gif")
 
 			await message.channel.send(embeds=[img, embed], view=Menu())
 
