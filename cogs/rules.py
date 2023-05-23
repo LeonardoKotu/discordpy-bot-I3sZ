@@ -167,12 +167,11 @@ class Menu(disnake.ui.View):
 			embed.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed2.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed3.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
-
 			embed5.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed6.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 
 
-			await interaction.send(embeds=[embed, embed2, embed5, embed6], ephemeral=True)
+			await interaction.send(embeds=[embed, embed2, embed3, embed5, embed6], ephemeral=True)
 
 		if select.values[0] == "Голосовые":
 
