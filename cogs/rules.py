@@ -85,10 +85,35 @@ class Menu(disnake.ui.View):
 
 
 
+	# 1.4
+			embed3 = disnake.Embed(
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.2`**",
+				colour=0x2f3136
+			)
 
+			embed3.add_field(
+				name="> Описание",
+				value="```Запрещено неадекватное повезедение/оскорбление людей и администрации..```",
+				inline=False
+			)
+
+			embed3.add_field(
+				name="> Нарушение",
+				value=
+				"```Варн/мьют```",
+				inline=True
+			)
+
+			embed3.add_field(
+				name="> Длительность",
+				value="```6д/2ч```",
+				inline=True
+			)
+
+			
 			# 1.3
 			embed5 = disnake.Embed(
-				title="<:white_dot2:1101889261432737844> Пункт - **`1.2`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.3`**",
 				colour=0x2f3136
 			)
 
@@ -115,7 +140,7 @@ class Menu(disnake.ui.View):
 
 			# 1.4
 			embed6 = disnake.Embed(
-				title="<:white_dot2:1101889261432737844> Пункт - **`1.3`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.4`**",
 				colour=0x2f3136
 			)
 
@@ -141,6 +166,8 @@ class Menu(disnake.ui.View):
 
 			embed.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed2.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
+			embed3.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
+
 			embed5.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed6.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 
