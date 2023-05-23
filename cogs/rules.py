@@ -13,19 +13,19 @@ class Menu(disnake.ui.View):
 		[
 			disnake.SelectOption(
 				label="Общие правила",
-				emoji="<:bubblechat:1104181277516644453>"
+				emoji="<:blue_white_dot:1101996010634481666>"
 			),
 			disnake.SelectOption(
 				label="Голосовые",
-				emoji="<:voice:1104181273087442974>"
+				emoji="<:blue_white_dot:1101996010634481666>"
 			),
 			disnake.SelectOption(
 				label="Виды нарушений",
-				emoji="<:agenda:1104182736081649766>"
+				emoji="<:blue_white_dot:1101996010634481666>"
 			),
 			disnake.SelectOption(
 				label="Снять выбор",
-				emoji="<:xmark:1104181267941032049>"
+				emoji="<:blue_white_dot:1101996010634481666>"
 			)
 		]
 	)
@@ -35,7 +35,7 @@ class Menu(disnake.ui.View):
 			# Эмбеды общих положение
 			# 1.0
 			embed = disnake.Embed(
-				title="<:blue_white_dot:1101996010634481666> Пункт - **`1.0`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.0`**",
 				colour=0x2f3136
 			)
 
@@ -60,7 +60,7 @@ class Menu(disnake.ui.View):
 
 			# 1.1
 			embed2 = disnake.Embed(
-				title="<:blue_white_dot:1101996010634481666> Пункт - **`1.1`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.1`**",
 				colour=0x2f3136
 			)
 
@@ -85,7 +85,7 @@ class Menu(disnake.ui.View):
 
 			# 1.1
 			embed3 = disnake.Embed(
-				title="<:blue_white_dot:1101996010634481666> Пункт - **`1.2`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.2`**",
 				colour=0x2f3136
 			)
 
@@ -105,7 +105,7 @@ class Menu(disnake.ui.View):
 
 			# 1.2
 			embed4 = disnake.Embed(
-				title="<:blue_white_dot:1101996010634481666> Пункт - **`1.3`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.3`**",
 				colour=0x2f3136
 			)
 
@@ -132,7 +132,7 @@ class Menu(disnake.ui.View):
 
 			# 1.3
 			embed5 = disnake.Embed(
-				title="<:blue_white_dot:1101996010634481666> Пункт - **`1.4`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.4`**",
 				colour=0x2f3136
 			)
 
@@ -159,7 +159,7 @@ class Menu(disnake.ui.View):
 
 			# 1.4
 			embed6 = disnake.Embed(
-				title="<:blue_white_dot:1101996010634481666> Пункт - **`1.5`**",
+				title="<:white_dot2:1101889261432737844> Пункт - **`1.5`**",
 				colour=0x2f3136
 			)
 
@@ -339,7 +339,7 @@ class Rules(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_message(self, message):
-		if message.content == "rules":
+		if message.content == "!!rules":
 			img = disnake.Embed(colour=0x2f3136)
 			img.set_image(url='https://i.pinimg.com/originals/f1/18/30/f118307225c557ea9c083486da5c1c42.gif')
 
