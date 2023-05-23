@@ -83,50 +83,6 @@ class Menu(disnake.ui.View):
 				inline=True
 			)
 
-			# 1.1
-			embed3 = disnake.Embed(
-				title="<:white_dot2:1101889261432737844> Пункт - **`1.2`**",
-				colour=0x2f3136
-			)
-
-			embed3.add_field(
-				name="> Описание",
-				value="```Коммерческая реклама и пиар без соглашении Администраций.```",
-				inline=False
-			)
-
-			embed3.add_field(
-				name="> Нарушение",
-				value=
-				"```Бан```",
-				inline=True
-			)
-
-
-			# 1.2
-			embed4 = disnake.Embed(
-				title="<:white_dot2:1101889261432737844> Пункт - **`1.3`**",
-				colour=0x2f3136
-			)
-
-			embed4.add_field(
-				name="> Описание",
-				value="```Запрещена публикация шокирующего и сексуального контента.```",
-				inline=False
-			)
-
-			embed4.add_field(
-				name="> Нарушение",
-				value=
-				"```Варн/мьют```",
-				inline=True
-			)
-
-			embed4.add_field(
-				name="> Длительность",
-				value="```6д/2ч```",
-				inline=True
-			)
 
 
 
@@ -191,7 +147,7 @@ class Menu(disnake.ui.View):
 			embed6.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 
 
-			await interaction.send(embeds=[embed, embed2, embed3, embed4, embed5, embed6], ephemeral=True)
+			await interaction.send(embeds=[embed, embed2, , embed5, embed6], ephemeral=True)
 
 		if select.values[0] == "Голосовые":
 
@@ -274,32 +230,7 @@ class Menu(disnake.ui.View):
 				inline=True
 			)
 
-
-			# 2.3 - Голсоовые
-			embed10 = disnake.Embed(
-				title="<:white_dot2:1101889261432737844> Пункт - **`2.3`**",
-				colour=0x2f3136
-			)
-
-			embed10.add_field(
-				name="> Описание",
-				value="""```При наличии шума вокруг рекомендуется применение Push-To-Talk..```""",
-				inline=False
-			)
-
-
-			embed10.add_field(
-				name="> Нарушение",
-				value="""```Варн/мьют```""",
-				inline=True
-			)
-
-
-			embed10.add_field(
-				name="> Длительность",
-				value="""```5д/2ч```""",
-				inline=True
-			)
+		
 
 			embed7.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed8.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
@@ -307,7 +238,7 @@ class Menu(disnake.ui.View):
 			embed10.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 
 
-			await interaction.send(embeds=[embed7, embed8, embed9, embed10], ephemeral=True)
+			await interaction.send(embeds=[embed7, embed8, embed9], ephemeral=True)
 
 		if select.values[0] == "Виды нарушений":
 			embed_n = disnake.Embed(
