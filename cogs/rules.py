@@ -141,8 +141,6 @@ class Menu(disnake.ui.View):
 
 			embed.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed2.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
-			embed3.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
-			embed4.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed5.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed6.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 
@@ -235,7 +233,6 @@ class Menu(disnake.ui.View):
 			embed7.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed8.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 			embed9.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
-			embed10.set_image(url="https://cdn.discordapp.com/attachments/1100945663283437578/1104174486284152883/image.png")
 
 
 			await interaction.send(embeds=[embed7, embed8, embed9], ephemeral=True)
