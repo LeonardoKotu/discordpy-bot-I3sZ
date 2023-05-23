@@ -11,8 +11,9 @@ bot = commands.InteractionBot(intents=intents)
 bot.load_extension("cogs.rules") # правила
 bot.load_extension("cogs.roles") # выбор ролей
 bot.load_extension("cogs.tickets") # тикеты
-bot.load_extension("cogs.verify") # тикеты
+bot.load_extension("cogs.verify") # верификация
 bot.load_extension("cogs.shop") # магазин
+bot.load_extension("cogs.info") # информация
 
 #E61254
 
